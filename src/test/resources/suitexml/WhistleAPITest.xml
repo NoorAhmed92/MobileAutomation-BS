@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Kinship Whistle API" verbose="1" parallel = "methods" thread-count = "4">
+
+<!--  <groups>-->
+<!--    <run>-->
+<!--      <include name="BAT"/>-->
+<!--    </run>-->
+<!--  </groups>-->
+
+<listeners>
+	<listener class-name="com.kinship.automation.utils.listeners.TestListener"/>
+</listeners>
+
+  <test name="Kinship Whistle API" parallel="true" >
+    <classes>
+      <class name="com.kinship.automation.testcases.api.ActivityTest"/>
+      <class name="com.kinship.automation.testcases.api.AuthTest"/>
+      <class name="com.kinship.automation.testcases.api.BreedsTest"/>
+      <class name="com.kinship.automation.testcases.api.CouponsTest"/>
+      <class name="com.kinship.automation.testcases.api.DevicesTest"/>
+      <class name="com.kinship.automation.testcases.api.HealthTest"/>
+      <class name="com.kinship.automation.testcases.api.MapTest"/>
+      <class name="com.kinship.automation.testcases.api.NotificationTokenTest"/>
+      <class name="com.kinship.automation.testcases.api.PerformanceSettingsTest"/>
+      <class name="com.kinship.automation.testcases.api.PetsTest"/>
+      <class name="com.kinship.automation.testcases.api.PhoneNumbersTest"/>
+      <class name="com.kinship.automation.testcases.api.PlacesTest"/>
+      <class name="com.kinship.automation.testcases.api.SubscriptionsTest"/>
+      <class name="com.kinship.automation.testcases.api.UsersTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

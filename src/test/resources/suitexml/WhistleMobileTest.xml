@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Kinship Whistle Mobile Suite" verbose="1"  parallel = "methods" thread-count = "1">
+
+    <listeners>
+        <listener class-name="com.kinship.automation.utils.listeners.TestListener"/>
+    </listeners>
+    <test name="Kinship Whistle Mobile">
+        <classes>
+            <class name="com.kinship.automation.testcases.mobile.LandingPageVerificationTest" />
+            <class name="com.kinship.automation.testcases.mobile.GetStartedSetUpTest" />
+            <class name="com.kinship.automation.testcases.mobile.DeviceSetUpTest" />
+            <class name="com.kinship.automation.testcases.mobile.ResetPasswordTest" />
+            <class name="com.kinship.automation.testcases.mobile.LoginLogoutTest" />
+            <class name="com.kinship.automation.testcases.mobile.CustomerContactTest" />
+            <class name="com.kinship.automation.testcases.mobile.HealthChatPITest" />
+            <class name="com.kinship.automation.testcases.mobile.VerifyTabTest" />
+            <class name="com.kinship.automation.testcases.mobile.PetProfileVerificationTest" />
+            <class name="com.kinship.automation.testcases.mobile.PetEditProfileTest" />
+            <class name="com.kinship.automation.testcases.mobile.PetGenderTest" />
+            <class name="com.kinship.automation.testcases.mobile.PetNeuteredSpayTest" />
+            <class name="com.kinship.automation.testcases.mobile.PetBreedTest" />
+            <class name="com.kinship.automation.testcases.mobile.PetWeightTest" />
+           	<class name="com.kinship.automation.testcases.mobile.PetFoodTest" />
+            <class name="com.kinship.automation.testcases.mobile.PetTimezoneTest" />
+            <class name="com.kinship.automation.testcases.mobile.HumanStuffViewTest" />
+
+        </classes>
+    </test>
+</suite>
